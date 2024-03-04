@@ -32,14 +32,21 @@ const team = [
     image: 'barbara-ramos-graphic-designer.jpg',
     },
     ];
+    
+    const container = document.querySelector(".container")
 
     for (let i = 0; i < team.length; i++) { // ciccliamo per estrapolare i vari membri del team
         const member = team[i];
+       
+        const markupName = `<div class="member">Nome:${member.name}</div>`
 
-        console.log(member.name, member.role, member.image);
-        
+        const markupRole = `<div class="member">Nome:${member.role}</div>`
+
+        const markupImage = `<div class="member">Nome:${member.image}</div>`
+
+        container.innerHTML += markupName, markupRole, markupImage
     }
 
-    const container = document.querySelector(".container")
+    
 
-    console.log(container);
+    
