@@ -4,47 +4,49 @@ const team = [
     {
     name: 'Wayne Barnett',
     role: 'Founder & CEO',
-    image: 'wayne-barnett-founder-ceo.jpg',
+    image: './img/wayne-barnett-founder-ceo.jpg',
     },
     {
     name: 'Angela Caroll',
     role: 'Chief Editor',
-    image: 'angela-caroll-chief-editor.jpg',
+    image: './img/angela-caroll-chief-editor.jpg',
     },
     {
     name: 'Walter Gordon',
     role: 'Office Manager',
-    image: 'walter-gordon-office-manager.jpg',
+    image: './img/walter-gordon-office-manager.jpg',
     },
     {
     name: 'Angela Lopez',
     role: 'Social Media Manager',
-    image: 'angela-lopez-social-media-manager.jpg',
+    image: './img/angela-lopez-social-media-manager.jpg',
     },
     {
     name: 'Scott Estrada',
     role: 'Developer',
-    image: 'scott-estrada-developer.jpg',
+    image: './img/scott-estrada-developer.jpg',
     },
     {
     name: 'Barbara Ramos',
     role: 'Graphic Designer',
-    image: 'barbara-ramos-graphic-designer.jpg',
+    image: './img/barbara-ramos-graphic-designer.jpg',
     },
     ];
     
-    const container = document.querySelector(".container")
+    
 
     for (let i = 0; i < team.length; i++) { // ciccliamo per estrapolare i vari membri del team
         const member = team[i];
-       
+        
+        const container = document.querySelector(".container")
+
         const markupName = `<div class="member">Nome:${member.name}</div>`
 
-        const markupRole = `<div class="member">Nome:${member.role}</div>`
+        const markupRole = `<div class="member">${member.role}</div>`
 
-        const markupImage = `<div class="member">Nome:${member.image}</div>`
+        const markupImage = `<img src="${member.image}" alt="">`
 
-        container.innerHTML += markupName, markupRole, markupImage
+        container.innerHTML += (markupName + markupRole + markupImage)
     }
 
     
