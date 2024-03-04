@@ -33,9 +33,13 @@ const team = [
     },
     ];
 
-    for (let i = 0; i < team.length; i++) {
+    for (let i = 0; i < team.length; i++) { // ciccliamo per estrapolare i vari membri del team
         const member = team[i];
 
-        console.log(member);
+        console.log(member.name, member.role, member.image);
         
     }
+
+    const container = document.querySelector(".container")
+
+    console.log(container);
