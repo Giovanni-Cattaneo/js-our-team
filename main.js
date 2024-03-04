@@ -40,6 +40,7 @@ for (let i = 0; i < team.length; i++) { // ciccliamo per estrapolare i vari memb
 
     const container = document.querySelector(".container")
 
+    // Questo markup permette di creare una carta con un immagine e un card body prese da bootstrap
     const markup = `
     <div class="card m-2 pb-5">
     <img class=" m-auto " src="${member.image}" alt="">
