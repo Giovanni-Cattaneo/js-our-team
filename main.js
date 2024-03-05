@@ -42,13 +42,15 @@ for (let i = 0; i < team.length; i++) { // ciccliamo per estrapolare i vari memb
 
     // Questo markup permette di creare una carta con un immagine e un card body prese da bootstrap
     const markup = 
-    `<div class="col-4">
-            
-            <div class="card m-2 pb-3">
-                <img class=" m-auto " src="${member.image}" alt="">
-                <div class="card-body">
-                    <h5 class="card-title">${member.name}</h5>
-                    <p class="card-text">${member.role}</p>
+    `<div class="row">
+            <div class="col-12">
+
+                <div class="card m-2 pb-3">
+                    <img class=" m-auto " src="${member.image}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">${member.name}</h5>
+                        <p class="card-text">${member.role}</p>
+                    </div>
                 </div>
             </div>
         </div>`
